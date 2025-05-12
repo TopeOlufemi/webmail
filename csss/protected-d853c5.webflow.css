@@ -1,0 +1,74 @@
+.section {
+  background-image: url('../imagess/NSS074-PROFORMA-INVOICE-16-CTRS-REDFISH-SEASON-WINTER-2024.png');
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.div-block {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: #0000;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.form-block {
+  width: 35.1rem;
+}
+
+.div-block-2 {
+  grid-column-gap: 51px;
+  grid-row-gap: 51px;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 80%;
+  display: flex;
+}
+
+.heading {
+  margin-bottom: 2px;
+  font-family: Exo, sans-serif;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.lottie-animation {
+  height: 28%;
+  margin-bottom: 35px;
+}
+
+.div-block-3 {
+  background-color: #0d8cc5;
+  border-radius: 4px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.heading-2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.image {
+  width: 10.4rem;
+  max-width: none;
+}
